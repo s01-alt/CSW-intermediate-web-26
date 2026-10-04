@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>DynaByte Team Test</title>
+</head>
+<body>
+    <div>
+        <h1>Welcome To The DynaByte Team Quiz!</h1>
+        <h2>When you take this quiz, you'd get a rank which shows what rank you are in the DynaByte Team</h2>
+        <div class="card">
+            {% for q in questions %}
+                <div class="question-card">
+                    <div class="width:100% height:fit padding:2px display:flex flex-direction:row">
+                        <h1>{{q.difficulty}}</h1>
+                        <h2>{{q.question}}</h2>
+                    </div>
+                    
+                    {% for option in q.options %}
+                        <div class="width:90% display:flex flex-direction:row border: 1px solid black">
+                            <p>{{option}}<p>
+                        <div>
+                    {% endfor %}
+                    
+            {% endfor %}       
+        <div>
+        
+    </div>
+</body>
+</html>

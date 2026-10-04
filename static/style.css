@@ -1,0 +1,27 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width:full;
+    margin:auto;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 5px;
+}
+
+.question-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    border: 1px;
+    border-style: solid;
+    border-color: black
+}
